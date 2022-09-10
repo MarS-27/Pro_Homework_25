@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heroes</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form class="heroes__form" id="heroesForm">
+		<label>
+			Name Surname: 
+			<input type="text" placeholder="Enter hero name" id="heroName">
+		</label>
+		<label>
+			Comics: 
+			<select id="heroComics"></select>
+		</label>
+		<label>
+			Favourite: 
+			<div class="heroFavouriteInput">
+				<input type="checkbox" id="heroFavourite">
+			</div>
+		</label>
+		<button class="button">Add Hero</button>
+	</form>
+	<table class="heroes__table" id="heroesTable">
+		<thead>
+			<tr>
+				<th>Name Surname</th>
+				<th>Comics</th>
+				<th>Favourite</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+	<!-- modal window -->
+	<div class="modal" id="modal">
+        <div class="modal-window">
+            <p class="modal-window__title">
+                Hero already exist! Do you want show hero?
+            </p>
+			<div class="btn-container">
+				<button class="button modal-window__btn" id="btn-yes">Yes</button>
+            	<button class="button modal-window__btn" id="btn-no">No</button>
+			</div>	
+        </div>    
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>

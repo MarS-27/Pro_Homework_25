@@ -1,0 +1,135 @@
+body {
+    background: rgba(189, 195, 230, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #373434;
+	font-size: 24px;
+}
+
+.heroes__form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #c1bfbf;
+	width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 10px 20px;
+	border-radius: 15px;
+}
+
+.heroes__form label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+
+.heroes__form input, 
+.heroes__form select {
+	margin-left: 15px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.heroes__form input:focus, 
+.heroes__form select:focus {
+	background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(234, 101, 101, 0.25);
+}
+
+.heroes__table {
+	width: 60%;
+    background: #fff;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: center;
+	border: 1px solid #5b5858;
+	padding: 10px;
+}
+
+th {
+	font-weight: 700;
+}
+
+.button {
+	width: 260px;
+    height: 40px;
+    border-radius: 15px;
+    background: rgba(189, 195, 230, 0.8);
+    font-size: 20px;
+    border: 2px solid #5b5858;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.611);
+    transition: 8ms;
+}
+
+.button:active {
+    background: rgb(147, 33, 33);
+    transition: 8ms;
+}
+
+.heroFavouriteInput {
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+
+.heroFavouriteInput input:focus {
+    box-shadow: none;
+}
+
+/* modal */
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(50, 50, 100, 0.5);
+    display: none;
+}
+
+.show-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-window {
+	width: 500px;
+    border: 2px solid #5b5858;
+    border-radius: 15px;
+    padding: 20px;
+    background: #c1bfbf;
+}
+
+.modal-window__title {
+	text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.modal-window__btn {
+	width: 150px;
+}
